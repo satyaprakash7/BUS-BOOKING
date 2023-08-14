@@ -13,10 +13,10 @@ app.use("/api/users", usersRoute);
 app.use("/api/buses", busesRoute);
 app.use("/api/bookings", bookingsRoute);
 
-// deployment config
 const path = require("path");
 __dirname = path.resolve();
 
+// render deployment
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/client/build")));
   app.get("*", (req, res) => {
