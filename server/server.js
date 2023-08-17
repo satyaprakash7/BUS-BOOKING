@@ -12,6 +12,7 @@ const bookingsRoute = require("./routes/bookingsRoute");
 app.use("/api/users", usersRoute);
 app.use("/api/buses", busesRoute);
 app.use("/api/bookings", bookingsRoute);
+// const port = process.env.PORT || 5000;
 
 const path = require("path");
 __dirname = path.resolve();
